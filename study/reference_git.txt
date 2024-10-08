@@ -1,0 +1,6 @@
+// 현재 디렉토리의 용량 확인 //
+du -sh .
+
+
+// 현재 디렉토리에 깃 폴더를 제외하고 100MB 넘는 파일 검색 //
+find . -path ./.git -prune -o -type f -size +100M -print
