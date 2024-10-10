@@ -4,7 +4,7 @@
 구글 크롬 + 애드 블록
 
 // 브레이브 확장 프로그램 //
-색 추출 (파란스포이드임), Image downloader-imageye , 
+색 추출 (파란스포이드임), Image downloader-imageye
 
 // vscode 확장 프로그램 //
 Auto Rename Tag, Material Design Icons, open in browser
