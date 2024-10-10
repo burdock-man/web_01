@@ -1,0 +1,120 @@
+* {margin: 0; padding: 0;}
+.cf::after {content: ""; display: block; clear: both;}
+ul, li {list-style: none;}
+a {text-decoration: none; color: black;}
+
+/* -------------------------------------------------------------------------------------------- */
+
+section {
+    width: 1700px;
+    height: 1060px;
+    margin: 200px auto 0;
+    /* background: tomato; */
+}
+
+section .title {
+    position: relative;
+    width: 100%;
+    height: 76px;
+    margin: 0 0 54px;
+    background: white;
+}
+
+
+section .title h3 {
+    font-size: 60px;
+    line-height: 76px;
+}
+
+section .title a {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    padding: 16px 24px ;
+    transform: translate(0, -50%);
+    border: 1px solid #b8b8b8;
+    border-radius: 50px;
+    background: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+section .title img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    transform: translate(0, 3px);
+}
+
+section .tab_menu {
+    width: 100%;
+    height: 30px;
+    padding: 0 0 20px;
+    border-bottom: 1px solid #666666;
+    background: white;
+}
+
+section .tab_menu li {
+    float: left;
+}
+
+section .tab_menu li a {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #d4d4d4;
+}
+
+section .tab_menu li:nth-child(1) a {
+    position: relative;
+    color: #111111;
+}
+
+section .tab_menu li:nth-child(1) a::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: url(../img/ic_glitter_2.png);
+}
+
+section .tab_menu .list_dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 0 16px;
+    transform: translate(0, 13px);
+    background: #d4d4d4;
+}
+
+section .cardbox {
+    width: 100%;
+    height: 660px;
+    background: yellow;
+    display: flex;
+}
+
+section .cardbox .cards {
+    display: block;
+    float: left;
+    flex: 1;
+    height: 660px;
+    padding: 20px 20px 0;
+    border-right: 1px solid #666666;
+    box-sizing: border-box;
+    background: cornflowerblue;
+}
+
+section .cardbox .card4 {
+    border-right: none;
+}
+
+section .cardbox .cards .card_img {
+    width: 100%;
+    height: 100px;
+    background: yellow;
+    position: relative;
+}
