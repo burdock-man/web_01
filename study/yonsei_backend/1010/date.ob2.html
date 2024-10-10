@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
+    setInterval(auto_time, 1000);
+
+    function auto_time () {
+
         var today = new Date ();
-        // alert(today);
+
         var nowYear = today.getFullYear ();
         var nowMonth = today.getMonth () + 1;
         var nowDate = today.getDate ();
@@ -33,33 +37,19 @@
             yoil = "토";
         }
 
-        // document.write ("<h1>오늘 날짜 정보</h1>");
-        // document.write ("현재 연도 : " + nowYear + "년", "<br>")
-        // document.write("현재 월 : " + nowMonth, "<br>");
-        // document.write("현재 일 : " + nowDate, "<br>");
-        // document.write("현재 요일 : " + yoil + "요일", "<br>");
-        // document.write("현재 시 : " + nowHours + "시", "<br>");
-        // document.write("현재 분 : " + nowMinutes + "분", "<br>");
-        // document.write("현재 초 : " + nowSeconds + "초", "<br>");
-
-        // document.write ("<h1>오늘 날짜 정보</h1>");
-        // document.write (nowYear + "년 " + (Number(nowMonth) + 1) + "월 " + nowDate + "일 " + yoil + "요일 " + nowHours + "시 " + nowMinutes + "분 " + nowSeconds + "초");
-
-        document.write ("<h1>오늘 날짜 정보</h1>");
-        document.write (nowYear + "년 ")
-        document.write (nowMonth + "월 ");
-        document.write (nowDate + "일 ");
-        document.write (yoil + "요일 ");
-        document.write (nowHours + "시 ");
-        document.write (nowMinutes + "분 ");
-        document.write (nowSeconds + "초 ");
-
-        document.write ("<br>" + `${nowYear}년 ${nowMonth}월 ${nowDate}일`);
-
         document.getElementById("year").innerHTML = nowYear;
+        document.getElementById("month").innerHTML = nowMonth;
+        document.getElementById("date").innerHTML = nowDate;
+        document.getElementById("day").innerHTML = yoil;
+        document.getElementById("hour").innerHTML = nowHours;
+        document.getElementById("minutes").innerHTML = nowMinutes;
+        document.getElementById("seconds").innerHTML = nowSeconds;
+
+    }
     </script>
     <style>
         * {background: black; font-size: 25px; color: skyblue; border-color: skyblue;}
+        h1 {border: 2px solid; padding: 20px; margin: 0 auto; text-align: center;}
     </style>
 </head>
 <body>
