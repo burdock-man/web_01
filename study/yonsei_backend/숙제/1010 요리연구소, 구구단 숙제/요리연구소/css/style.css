@@ -90,31 +90,36 @@ section .tab_menu .list_dot {
     background: #d4d4d4;
 }
 
+
+/* ------------------------------------------------ */
+
 .cardbox {
-    width: 100%;
-    height: 660px;
-    background: wheat;
+    width: 1700px;
+  
+    background: cyan;
+    float: left;
 }
 
 .cardbox .card {
     display: block;
     float: left;
     width: 25%;
-    height: 100%;
+    height: 660px;
     padding: 20px 20px 0;
     box-sizing: border-box;
     background: tomato;
-    position: relative;
 }
 
-.card img {
+.cardbox .card img {
+    display: block;
     width: 100%;
 }
 
-.cd_txt {
-    display: block;
-    width: 200px;
+.cardbox .card .cd_txt {
+    width: 100%;
     height: 140px;
     /* padding: 20px 0 48px; */
     background: yellow;
 }
+
+/* ------------------------------------------------ */
