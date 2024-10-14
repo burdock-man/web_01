@@ -55,42 +55,46 @@
                 <img src="images/slide3.jpg" alt="">
             </div>
         </div>
-        <button class="prev" onclick="prevSlide()">Prev</button>
-        <button class="next" onclick="nextSlide()">Next</button>
+        <button class="prev" onclick="slide(1)">Prev</button>
+        <button class="next" onclick="slide(-1)">Next</button>
     </div>
 
     <script>
-        const slider = document.querySelector('.slider');
-        // 첫번째 일치하는 요소 .slider 한개밖에 없으므로 한개만 선택
-        const slides = document.querySelectorAll('.slide');
-        // "querySelectorAll"<<< 모든 .slide 세개 다 선택. 만약 "querySelector"를 썼으면 가장 첫번째것만 뽑힘.
+        const a = document.querySelector('.slider');
+        const b = document.querySelectorAll('.slide');
 
-        var currentIndex = 0;
+        var num = 0;
+ 
+        function slide (a) {
+            if (a) {}
 
-
-        function showSlide (index) {
-
-            if (index < 0) {
-                currentIndex = slides.length - 1;
-            } else if (index >= slides.length) {
-                currentIndex = 0;
-            } else {
-                currentIndex = index;
-            }
-            var transformValue = -currentIndex * 100 + "%";
-            // alert(transformValue);
-            slider.style.transform = "translateX("+transformValue+")";
 
 
         }
 
 
+
+
+        function showSlide (e) {
+
+            if (e < 0) {
+                c = 2;
+            } else if (e >= 3) {
+                c = 0;
+            } else {
+                c = e;
+            }
+            var d = -c * 100 + "%";
+            // alert(d);
+            a.style.transform = "translateX("+d+")";
+
+        }
 
         function nextSlide () {
-            showSlide(currentIndex + 1);
+            showSlide(c + 1);
         }
         function prevSlide () {
-            showSlide(currentIndex - 1);
+            showSlide(c - 1);
         }
     </script>
 </body>

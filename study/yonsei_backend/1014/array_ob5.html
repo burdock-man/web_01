@@ -24,7 +24,7 @@
             msum = msum + scores[i][2];
         }
 
-        document.write ("국어합계 : " + ksum + "<br>" + "국어평균 : " + ksum / scores.length + "<br><br>" + "영어합계 : " + esum + "<br>" + "영어평균 : " + esum / scores.length + "<br><br>" + "수학합계 : " + msum + "<br>" + "수학평균 : " + msum / scores.length + "<br>")
+        document.write ("국어합계 : " + ksum + "<br>" + "국어평균 : " + Math.floor(ksum / scores.length) + "<br><br>" + "영어합계 : " + esum + "<br>" + "영어평균 : " + esum / scores.length + "<br><br>" + "수학합계 : " + msum + "<br>" + "수학평균 : " + msum / scores.length + "<br>")
 
     </script>
     <style>
