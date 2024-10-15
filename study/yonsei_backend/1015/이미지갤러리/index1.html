@@ -11,31 +11,32 @@
     #galleryWrap img {vertical-align: middle;}
     </style>
 
+</head>
+
 <script>
 
     var num = 1;
-    // var prevBtn = document.querySelector('#prev');
-    // var nextBtn = document.querySelector('#next');
-    var gallery = document.querySelector('#gallery')
 
-    function nextGallery() {
+    function nextGallery () {
+        if (num == 7) {
+            num = 0;
+        }
         num++;
-        if(num > 7) {
-            num = 1;
-        }
-        gallery.setAttribute('src', `images/img${num}.jpg`)
+        var galleryImg = document.querySelector('#gallery');
+        galleryImg.setAttribute('src', `images/img${num}.jpg`);
     }
-    function prevGallery() {
+
+    function prevGallery () {
+        if (num == 1) {
+            num = 8;
+        }
         num--;
-        if(num < 1) {
-            num = 7;
-        }
-        gallery.setAttribute('src', `images/img${num}.jpg`)
+        var galleryImg = document.querySelector('#gallery');
+        galleryImg.setAttribute('src', `images/img${num}.jpg`);
     }
+
 
 </script>
-
-</head>
 
 <body>
     <div id="galleryWrap">
