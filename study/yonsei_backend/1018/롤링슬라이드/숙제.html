@@ -87,4 +87,13 @@
     var total = 3;
     var li_width = document.querySelector("#banner li").offsetWidth;
     // alert(li_width);
+    var prev = document.querySelector(".prev");
+    var next = document.querySelector(".next");
+    var num = 0;
+    
+    next.addEventListener("click",function(){
+        num++;
+        list.style.transition = "margin-left 0.5s";
+        list.style.marginLeft = li_width * num + "px";
+    });
 </script>
