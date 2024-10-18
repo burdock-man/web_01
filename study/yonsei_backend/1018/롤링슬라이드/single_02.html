@@ -18,8 +18,9 @@
             width: 1200px;
             height: 300px;
             margin: 50px auto 0;
-            border: 2px solid red;
             position: relative;
+            overflow: hidden;
+            /* border: 2px solid red; */
         }
 
         #img_slide ul {
@@ -90,10 +91,56 @@
     var prev = document.querySelector(".prev");
     var next = document.querySelector(".next");
     var num = 0;
+
+    var copyObj = listLi[0].cloneNode(1);
+    list.append(copyObj);
     
     next.addEventListener("click",function(){
-        num++;
-        list.style.transition = "margin-left 0.5s";
-        list.style.marginLeft = li_width * num + "px";
+
+        if (num == 3) {
+            num = 0;
+            list.style.transition = "none";
+            list.style.marginLeft = "0";
+        }
+
+        setTimeout(function(){ // 한번만 실행됨. (50 == 0.05초) (setTimeout은 num = 0 -> 1 가는거 동시실행 방지.)
+            num++;
+            list.style.transition = "margin-left 0.5s";
+            list.style.marginLeft = -li_width * num + "px";
+        },50);
+
     });
+
+    setInterval(function(){ // 계속 실행됨.
+
+        if (num == 3) {
+            num = 0;
+            list.style.transition = "none";
+            list.style.marginLeft = "0";
+        }
+
+        setTimeout(function(){ // 한번만 실행됨. (50 == 0.05초) (setTimeout은 num = 0 -> 1 가는거 동시실행 방지.)
+            num++;
+            list.style.transition = "margin-left 0.5s";
+            list.style.marginLeft = -li_width * num + "px";
+        },50);
+
+    },2000);
+
+    prev.addEventListener("click",function(){
+
+        if (num == 0) {
+            num = 3;
+            list.style.transition = "none";
+            list.style.marginLeft = -li_width * num + "px";
+        }
+
+        setTimeout(function(){ // 한번만 실행됨. (50 == 0.05초) (setTimeout은 num = 0 -> 1 가는거 동시실행 방지.)
+            num--;
+            list.style.transition = "margin-left 0.5s";
+            list.style.marginLeft = -li_width * num + "px";
+        },50);
+
+    });
+
 </script>
