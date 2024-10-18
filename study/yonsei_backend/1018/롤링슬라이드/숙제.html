@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        ul{list-style: none;}
+        a{text-decoration: none;}
+        header{
+            width: 1200px;
+            height: 200px;
+            margin: 0 auto;
+            background: #ccc;
+        }
+        #img_slide{
+            width: 1200px;
+            height: 300px;
+            margin: 50px auto 0;
+            border: 2px solid red;
+            position: relative;
+        }
+
+        #img_slide ul {
+            width: 4800px;
+            height: 300px;
+        }
+
+        #img_slide ul li {
+            width: 1200px;
+            float: left;
+        }
+
+        .prev {
+            position: absolute;
+            left: 30px;
+            top: 50%;
+            transform: translate(0,-50%);
+        }
+        .next {
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translate(0,-50%);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="img_slide">
+            <ul id="banner">
+                <li>
+                    <a href="#">
+                        <img src="images/slide1.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/slide2.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/slide3.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <div class="btn">
+                <a href="#" class="prev">
+                    <img src="images/prev_btn.png" alt="이전 버튼">
+                </a>
+                <a href="#" class="next">
+                    <img src="images/next_btn.png" alt="다음 버튼">
+                </a>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
+
+<script>
+    var list = document.querySelector("#banner");
+    var listLi = document.querySelectorAll("#banner li");
+    var show_num = 1;
+    var total = 3;
+    var li_width = document.querySelector("#banner li").offsetWidth;
+    // alert(li_width);
+</script>
