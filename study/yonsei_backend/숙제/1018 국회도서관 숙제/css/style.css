@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: -0.5px;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* ======================================== header ======================================== */
+
+header {
+    width: 100%;
+    height: 155px;
+    /* background: cornflowerblue; */
+}
+
+header .topBanner {
+    width: 100%;
+    height: 70px;
+    margin: 0 auto;
+    background: #f4f4f4;
+}
+
+header .topBanner img {
+    display: block;
+    margin: 0 auto;
+}
+
+header .inner {
+    width: 1300px;
+    height: 85px;
+    margin: 0 auto;
+    border-top: 1px solid transparent;
+    box-sizing: border-box;
+    /* background: tomato; */
+}
+
+header .inner .top {
+    width: 1280px;
+    height: 18px;
+    margin: 6px auto;
+    position: relative;
+    /* background: cyan; */
+}
+
+header .inner .top ul {
+    position: absolute;
+    right: 0;
+}
+
+header .inner .top ul li {
+    float: left;
+    padding-left: 20px;
+}
+
+header .inner .top ul li a {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: #6c6d6d;
+}
+
+header .inner .bottom {
+    width: 1280px;
+    height: 46px;
+    margin: 0 auto;
+    position: relative;
+    /* background: cyan; */
+}
+
+header .inner .bottom>a {
+    width: 240px;
+    height: 46px;
+    position: absolute;
+    padding: 3px 0;
+    box-sizing: border-box;
+    /* background: yellow */
+}
+
+header .inner .bottom .header_etc {
+    width: 407px;
+    height: 46px;
+    position: absolute;
+    right: 0;
+    padding: 3px 0;
+    box-sizing: border-box;
+    /* background: yellow; */
+}
+
+header .inner .bottom .header_search {
+    width: 295px;
+    height: 40px;
+    border: 1px solid #dadada;
+    border-radius: 30px;
+    background: #efefef;
+    box-sizing: border-box;
+    position: relative;
+    margin-left: 110px;
+}
+
+header .inner .bottom .header_search input {
+    width: 220px;
+    height: 36px;
+    padding: 2px 0 0 20px;
+    font-size: 12px;
+    font-weight: bold;
+    background: none;
+    position: absolute;
+    left: 5px;
+    border: none;
+}
+
+header .inner .bottom .header_search a {
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 25px;
+    top: 55%;
+    transform: translate(0, -50%);
+    background: url(../img/ico_i_search.png) no-repeat center/ cover;
+}
+
+
+
+/* ======================================== nav ======================================== */
+
+nav {
+    width: 100%;
+    height: 62px;
+    position: relative;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1;
+    background: white;
+}
+
+nav>ul {
+    width: 100%;
+    height: 61px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul .menuShadow {
+    display: block;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 60px;
+    background: white;
+    transition: all 0.5s;
+}
+
+
+nav ul .mainMenu {
+    width: 250px;
+    height: 60px;
+    float: left;
+}
+
+nav ul .siteMap {
+    width: 150px;
+    background: url(../img/btn_hambuger.png) no-repeat center 60%;
+}
+
+nav ul .mainMenu>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul .mainMenu>ul {
+    width: 1162px;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 10;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+nav ul .mainMenu>ul p {
+    width: 161px;
+    height: 400px;
+    float: left;
+    border-right: 1px solid #ddd;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+
+nav ul .mainMenu ul .menuWrap {
+    width: 1000px;
+    height: 400px;
+    float: left;
+    padding: 10px 0 0 20px;
+    box-sizing: border-box;
+}
+
+nav ul .mainMenu ul .menuWrap .category a {
+    color: #128ddd;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav ul .mainMenu ul .menuWrap .category {
+    display: block;
+    width: 150px;
+    height: 50%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+nav ul .mainMenu ul .menuWrap .subMenu {
+    display: block;
+    width: 300px;
+    height: 50%;
+    float: left;
+}
+
+nav ul .mainMenu ul .menuWrap .subMenu ul {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+nav ul .mainMenu ul .menuWrap .subMenu ul li a {
+    display: block;
+    padding-bottom: 20px;
+}
+
+nav ul .mainMenu ul .menuWrap .ctgr1 {
+    height: 100%;
+}
+
+nav ul .mainMenu ul .menuWrap .sub1 {
+    height: 100%;
+}
+
+nav ul .mainMenu:hover > ul {
+    opacity: 1;
+    height: 400px;
+}
+
+nav ul>.mainMenu:hover+.menuShadow {
+    height: 400px;
+}
+
+
+
+/* ======================================== banner ======================================== */
+
+.banner {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background: url(../img/ban-1.jpg) no-repeat center / cover;
+}
+
+.banner .banner_search {
+    width: 930px;
+    height: 65px;
+    position: absolute; 
+    left: 50%;
+    top: 235px;
+    transform: translate(-50%, 0);
+}
+
+.banner .banner_search .searchBar {
+    width: 675px;
+    height: 65px;
+    background: white;
+    border-radius: 30px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+
+.banner .banner_search .searchBar h3 {
+    width: 198px;
+    height: 65px;
+    font-size: 21px;
+    float: left;
+    text-align: center;
+    line-height: 65px;
+    color: white;
+    background: #128ddd;
+}
+
+.banner .banner_search .searchBar input {
+    width: 380px;
+    height: 65px;
+    float: left;
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0 12px 0 20px;
+}
+
+.banner .banner_search .searchBar .button {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+    background: url(../img/ico_i_search.png) no-repeat center / cover;
+}
+
+.banner .banner_search .search_area_img {
+    width: 235px;
+    height: 65px;
+    float: left;
+    margin-left: 20px;
+    background: url(../img/search_area_img.png) no-repeat;
+}
+
+.banner .swiper_controller {
+    width: 450px;
+    height: 28px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 0 10px;
+    box-sizing: border-box;
+    background: tomato;
+}
+
+.banner .swiper_controller span {
+    display: block;
+    float: left;
+    color: white;
+    font-weight: bold;
+    opacity: 0.9;
+}
+
+.banner .swiper_controller span:nth-child(1) {
+    padding-right: 5px;
+}
+
+.banner .swiper_controller .swiper_bullet {
+    width: 50px;
+    height: 4px;
+    margin: 12px 5px 0;
+    background: white;
+}
+
+.banner .swiper_controller .slide1 {
+    margin: 12px 5px 0 15px;
+}
