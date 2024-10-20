@@ -195,8 +195,8 @@
             <a href="#" class="search_area_img"><img src="#" alt="" title="새창열림"></a>
         </div>
         <div class="swiper_controller">
-            <span id="swiper_current">1</span>
-            <span id="swiper_total"> / 5</span>
+            <span class="swiper_current">1</span>
+            <span class="swiper_total"> / 5</span>
             <span class="swiper_bullet slide1 active"></span>
             <span class="swiper_bullet slide2"></span>
             <span class="swiper_bullet slide3"></span>
@@ -231,15 +231,19 @@
                         <a href="#" class="prevMonth"></a>
                     </div>
                     <div class="contBottom">
-                        <!-- 콘텐츠바텀만들면됨. -->
+                        <p>법정공휴일, 임시공휴일, 정기휴관일</p>
                     </div>
                 </div>
+                <div class="linkImage">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
             </div>
-            <div class="tab_menu">
+            <div class="tabMenu">
                 <ul class="button">
-                    <li><a href="#tab1">공지사항</a></li>
-                    <li><a href="#tab2">보도자료</a></li>
-                    <li><a href="#" id="btn_more"></a></li>
+                    <li><a class="tabButton" href="#tab1">공지사항</a></li>
+                    <li><a class="tabButton active" href="#tab2">보도자료</a></li>
+                    <li><a class="moreBtn" href="#" id="btn_more"></a></li>
                 </ul>
                 <ul class="menu tab1">
                     <li><a href="#">2025년도 국회도서관 외국 정기간행물 구입사업 입찰 공고</a></li>
@@ -248,7 +252,7 @@
                     <li><a href="#">국회부산도서관 일반임기제공무원(정보기술) 채용계획 공고</a></li>
                     <li><a href="#">국회도서관 전문임기제공무원 라급(공보) 채용시험 최종합격자 공고</a></li>
                 </ul>
-                <ul class="menu tab2">
+                <ul class="menu tab2 active">
                     <li><a href="#">일본 의사의 ‘일하는 방식 개혁’ 본격 추진 - 「현안, 외국에선?」 제92호</a></li>
                     <li><a href="#">독일의 기후위기 대응 입법개선 및 생태헌법안 - 「최신외국입법정보」 제257호</a></li>
                     <li><a href="#">국회도서관, 『한국 첫 노벨문학상 수상 한강 작가 특별전』 개최 -「채식주의자」,「소년이 온다」 등 100여 권 전시</a></li>
@@ -256,14 +260,92 @@
                     <li><a href="#">미국 청소년 약물중독의 예방과 대책 - 「현안, 외국에선?」 제91호</a></li>
                 </ul>
             </div>
-
             <div class="section2">
-
-            </div>
-            <div class="section3">
-
+                <div class="sectTop">
+                    <a class="linkImage1" href="#">도서관소개</a>
+                    <a class="linkImage2" href="#">국화부산도서관소개</a>
+                    <a class="linkImage3" href="#"></a>
+                </div>
+                <div class="sectBottom">
+                    <div class="bookList1">
+                        <p>책 이야기</p>
+                        <a class="book list1" href="#"></a>
+                        <a class="book list2" href="#"></a>
+                    </div>
+                    <div class="bookList2">
+                        <p>도서관 발간물</p>
+                        <a class="book list3" href="#"></a>
+                        <a class="book list4" href="#"></a>
+                    </div>
+                    <div class="imgSlide">
+                        <div class="slideBox">
+                            <img src="img/slide1.png" alt="">
+                            <img src="img/slide2.png" alt="">
+                            <img src="img/slide3.png" alt="">
+                            <img src="img/slide4.png" alt="">
+                        </div>
+                        <div class="slideController">
+                            <span class="slide_current">1</span>
+                            <span class="slide_total"> / 4</span>
+                            <span class="icons prev"></span>
+                            <span class="icons stop"></span>
+                            <span class="icons next"></span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
+    <footer>
+        <div class="footWrap">
+            <div class="footTop">
+                <ul >
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이메일수집거부</a></li>
+                </ul>
+                <div class="footTopRight">
+                    <ul>
+                        <li><a href="#" class="btn sns1"></a></li>
+                        <li><a href="#" class="btn sns2"></a></li>
+                        <li><a href="#" class="btn sns3"></a></li>
+                        <li><a href="#" class="btn sns4"></a></li>
+                    </ul>
+                    <div class="familySite">
+                        <select name="관련사이트 바로가기" id="famSite">
+                            <option value="#">국회부산도서관</option>
+                            <option value="#">대한민국 국회</option>
+                            <option value="#">국회사무처</option>
+                            <option value="#">국회예산정책처</option>
+                            <option value="#">국회입법조사처</option>
+                            <option value="#">국회미래연구원</option>
+                            <option value="#">국회기록보존소</option>
+                            <option value="#">헌법재판소도서관</option>
+                            <option value="#">중앙선거관리위원회 도서관</option>
+                            <option value="#">한국학술지인용색인</option>
+                            <option value="#">국가전자도서관</option>
+                            <option value="#">국가정책연구포털</option>
+                            <option value="#">국가학술정보 클라우드</option>
+                            <option value="#">독도홈페이지</option>
+                            <option value="#">디지털콘텐츠식별체계</option>
+                            <option value="#">학술연구자정보 공유</option>
+                            <option value="#">AI의정분석서비스 아르고스</option>
+                            <option value="#">국가전략정보포털</option>
+                            <option value="#">국회법률도서관</option>
+                        </select>
+                    </div>
+                    <button>이동</button>
+                    <a href="#" class="linkImage"></a>
+                </div>
+            </div>
+            <div class="footInfo">
+                <div class="footAddress">
+                    <span>서울특별시 영등포구 의사당대로 1 (여의도동) (우07233)</span>
+                    <span>홈페이지 관련 문의 webw3@nanet.go.kr</span>
+                    <span>전화문의 02-6788-4211, 080-788-4211(수신자 부담)</span>
+                </div>
+                <p class="footCopy">Copyright ⓒ <strong>대한민국 국회도서관</strong> All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

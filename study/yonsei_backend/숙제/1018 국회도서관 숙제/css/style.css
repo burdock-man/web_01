@@ -170,7 +170,7 @@ nav ul .menuShadow {
 
 
 nav ul .mainMenu {
-    width: 250px;
+    width: 260px;
     height: 60px;
     float: left;
 }
@@ -413,14 +413,12 @@ main {
     width: 100%;
     /* height: 536px; */
     padding: 80px 0;
-    background: cornflowerblue;
 }
 
 main .mainWrap {
     width: 1280px;
     /* height: 536px; */
     margin: 0 auto;
-    background: tomato;
 }
 
 main .mainWrap  .info_nav {
@@ -488,7 +486,7 @@ main .mainWrap .section1 {
     width: 880px;
     height: 100px;
     float: left;
-    background: yellow;
+    margin-bottom: 20px;
 }
 
 main .mainWrap .section1 .content {
@@ -499,7 +497,7 @@ main .mainWrap .section1 .content {
     background: #f2f7fb;
     border: 1px solid #b7bfc5;
     border-radius: 5px;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
     box-sizing: border-box;
 }
 
@@ -507,7 +505,6 @@ main .mainWrap .section1 .content .contTop {
     width: 100%;
     height: 35px;
     float: left;
-    background: tomato;
 }
 
 main .mainWrap .section1 .content .contTop h4 {
@@ -558,4 +555,526 @@ main .mainWrap .section1 .content .contTop .nextMonth {
     float: right;
     margin: 5px 20px 0 0;
     background: url(../img/icon_right.png) no-repeat center / cover;
+}
+
+main .mainWrap .section1 .content .contBottom {
+    width: 100%;
+    height: 20px;
+    margin-top: 5px;
+    float: left;
+}
+
+main .mainWrap .section1 .content .contBottom p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #128ddd;
+    font-weight: bold;
+}
+
+main .mainWrap .section1 .linkImage {
+    float: left;
+    width: 400px;
+    height: 100px;
+}
+
+main .mainWrap .section1 .linkImage a:nth-child(1){
+    float: left;
+    width: 205px;
+    height: 100%;
+    background: url(../img/banner_01.png) no-repeat center / cover;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+main .mainWrap .section1 .linkImage a:nth-child(2){
+    float: left;
+    width: 185px;
+    height: 100%;
+    background: url(../img/banner_02.jpg) no-repeat center / cover;
+    border-radius: 5px;
+}
+
+main .mainWrap .tabMenu {
+    width: 400px;
+    height: 335px;
+    float: left;
+    margin-right: 20px;
+}
+
+main .mainWrap .tabMenu .button li .tabButton{
+    float: left;
+    width: 130px;
+    height: 50px;
+    background: #d9d9d9;
+    box-sizing: border-box;
+    color: #222222;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+}
+
+main .mainWrap .tabMenu .button li .tabButton.active {
+    background: #32557f;
+    color: white;
+}
+
+main .mainWrap .tabMenu .button li .moreBtn {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-left: 90px;
+    margin: 5px 0 5px 100px;
+    background: url(../img/btn_more.png) no-repeat center;
+}
+
+main .mainWrap .tabMenu .menu {
+    width: 400px;
+    height: 285px;
+    float: left;
+    background: white;
+    border: 1px solid #b7bfc5;
+    border-radius: 0 5px 5px 5px;
+    padding: 30px 20px 20px 20px;
+    box-sizing: border-box;
+    display: none;
+}
+
+main .mainWrap .tabMenu .menu.active {
+    display: block;
+}
+
+main .mainWrap .tabMenu .menu li {
+    padding-bottom: 25px;
+}
+
+
+main .mainWrap .tabMenu .menu li a {
+    width: 360px;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: bold;
+    color: #222222;
+}
+
+main .mainWrap .section2 {
+    float: left;
+    width: 860px;
+    height: 335px;
+}
+
+main .mainWrap .section2 .sectTop {
+    width: 860px;
+    height: 120px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+main .mainWrap .section2 .sectTop .linkImage1 {
+    display: block;
+    width: 215px;
+    height: 120px;
+    float: left;
+    position: relative;
+    padding: 15px 0 0 20px;
+    box-sizing: border-box;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #222222;
+    margin-right: 10px;
+    background: #eceaff url(../img/bg1.png) no-repeat 0 bottom / 170px;
+}
+
+main .mainWrap .section2 .sectTop .linkImage1::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    border-radius: 50%;
+    bottom: 10px;
+    background: rgba(0, 0, 0, 0.1) url(../img/ico_i_center_next_color.png) no-repeat center / cover;
+    opacity: 0.6;
+}
+
+main .mainWrap .section2 .sectTop .linkImage2 {
+    display: block;
+    width: 215px;
+    height: 120px;
+    float: left;
+    position: relative;
+    padding: 15px 0 0 20px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #222222;
+    margin-right: 20px;
+    background: #eafffa url(../img/bg2.png) no-repeat 0 bottom / 170px;
+}
+
+main .mainWrap .section2 .sectTop .linkImage2::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    border-radius: 50%;
+    bottom: 10px;
+    background: rgba(0, 0, 0, 0.1) url(../img/ico_i_center_next_color.png) no-repeat center / cover;
+    opacity: 0.6;
+}
+
+main .mainWrap .section2 .sectTop .linkImage3 {
+    display: block;
+    float: left;
+    width: 400px;
+    height: 120px;
+    background: url(../img/nonocare.jpg) no-repeat center / cover;
+}
+
+main .mainWrap .section2 .sectBottom {
+    width: 860px;
+    height: 195px;
+    float: left;
+}
+
+main .mainWrap .section2 .sectBottom .bookList1 {
+    width: 215px;
+    height: 195px;
+    margin-right: 10px;
+    float: left;
+}
+
+
+main .mainWrap .section2 .sectBottom .bookList1 p{
+    width: 215px;
+    height: 35px;
+    display: block;
+    text-align: center;
+    line-height: 35px;
+    background: #32557f;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    float: left;
+    border-radius: 5px 5px 0 0;
+    margin-bottom:  10px;
+}
+
+main .mainWrap .section2 .sectBottom .bookList1 .book {
+    display: block;
+    width: 100px;
+    height: 150px;
+    float: left;
+}
+
+main .mainWrap .section2 .sectBottom .bookList1 .list1 {
+    margin-right: 15px;
+    background: url(../img/book1.jpg) no-repeat center / cover;
+}
+
+main .mainWrap .section2 .sectBottom .bookList1 .list2 {
+    background: url(../img/book2.jpg) no-repeat center / cover;
+}
+
+main .mainWrap .section2 .sectBottom .bookList2 {
+    width: 215px;
+    height: 195px;
+    margin-right: 20px;
+    float: left;
+}
+
+
+main .mainWrap .section2 .sectBottom .bookList2 p{
+    width: 215px;
+    height: 35px;
+    display: block;
+    text-align: center;
+    line-height: 35px;
+    background: #32557f;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    float: left;
+    border-radius: 5px 5px 0 0;
+    margin-bottom:  10px;
+}
+
+main .mainWrap .section2 .sectBottom .bookList2 .book {
+    display: block;
+    width: 100px;
+    height: 150px;
+    float: left;
+}
+
+main .mainWrap .section2 .sectBottom .bookList2 .list3 {
+    margin-right: 15px;
+    background: url(../img/book3.png) no-repeat center / cover;
+}
+
+main .mainWrap .section2 .sectBottom .bookList2 .list4 {
+    background: url(../img/book4.jpg) no-repeat center / cover;
+}
+
+main .mainWrap .section2 .sectBottom .imgSlide {
+    width: 400px;
+    height: 195px;
+    float: left;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+}
+
+main .mainWrap .section2 .sectBottom .imgSlide .slideBox {
+    width: 2000px;
+    height: 195px;
+}
+
+
+main .mainWrap .section2 .sectBottom .imgSlide .slideBox img {
+    display: block;
+    width: 400px;
+    height: 195px;
+    float: left;
+}
+
+main .mainWrap .section2 .sectBottom .imgSlide .slideController {
+    width: 400px;
+    height: 28px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0 120px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+main .mainWrap .section2 .sectBottom .imgSlide .slideController span {
+    display: block;
+    float: left;
+    color: white;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: bold;
+}
+
+main .mainWrap .section2 .sectBottom .imgSlide .slideController .slide_current {
+    padding-right: 5px;
+}
+
+main .mainWrap .section2 .sectBottom .imgSlide .slideController .slide_total {
+    padding-right: 20px;
+}
+
+main .mainWrap .section2 .sectBottom .imgSlide .slideController .icons {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+}
+
+main .mainWrap .section2 .sectBottom .imgSlide .slideController .prev {
+    background: url(../img/ico_i_center_prev.png) no-repeat center / cover;
+}
+
+main .mainWrap .section2 .sectBottom .imgSlide .slideController .stop {
+    background: url(../img/ico_i_stop.png) no-repeat center / cover;
+}
+
+main .mainWrap .section2 .sectBottom .imgSlide .slideController .next {
+    background: url(../img/ico_i_center_next.png) no-repeat center / cover;
+    margin-right: 0;
+}
+
+
+
+/* ======================================== footer ======================================== */
+
+footer {
+    width: 100%;
+    height: 175px;
+    padding: 20px 0;
+    border-top: 1px solid #dddddd;
+    box-sizing: border-box;
+}
+
+footer .footWrap {
+    width: 1280px;
+    height: 133px;
+    margin: 0 auto;
+}
+
+footer .footWrap .footTop {
+    width: 1280px;
+    height: 43px;
+    float: left;
+}
+
+footer .footWrap .footTop>ul>li {
+    float: left;
+    margin-right: 21px;
+    position: relative;
+}
+
+footer .footWrap .footTop ul li:nth-child(2) {
+    margin-right: 0;
+}
+
+footer .footWrap .footTop>ul>li:nth-child(1)::after {
+    content: "";
+    width: 1px;
+    height: 14px;
+    position: absolute;
+    right: -11px;
+    top: 50%;
+    transform: translate(0, -50%);
+    background: #606060;
+}
+
+footer .footWrap .footTop>ul>li>a {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 43px;
+    color: #606060;
+}
+
+footer .footWrap .footTop .footTopRight {
+    float: right;
+    width: 514px;
+    height: 43px;
+}
+
+
+
+footer .footWrap .footTop .footTopRight ul li .btn {
+    float: left;
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 9px 10px 0 0;
+    border-radius: 50%;
+}
+
+footer .footWrap .footTop .footTopRight ul li .sns1 {
+    background: url(../img/sns01.png) no-repeat center / cover;
+}
+
+footer .footWrap .footTop .footTopRight ul li .sns2 {
+    background: url(../img/sns02.png) no-repeat center / cover;
+}
+
+footer .footWrap .footTop .footTopRight ul li .sns3 {
+    background: url(../img/sns03.png) no-repeat center / cover;
+}
+
+footer .footWrap .footTop .footTopRight ul li .sns4 {
+    background: url(../img/sns04.png) no-repeat center / cover;
+}
+
+footer .footWrap .footTop .footTopRight .familySite {
+    width: 202px;
+    height: 43px;
+    float: left;
+    position: relative;
+    padding: 2px 10px 0;
+}
+
+footer .footWrap .footTop .footTopRight .familySite::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    background: url(../img/arrow-drop-down.png) no-repeat center / cover;
+    right: 8px;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+footer .footWrap .footTop .footTopRight .familySite select {
+    width: 202px;
+    height: 40px;
+    font-size: 14px;
+    appearance: none;
+    cursor: pointer;
+    padding: 0 30px 0 10px;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    float: left;
+}
+
+footer .footWrap .footTop .footTopRight button {
+    width: 70px;
+    height: 40px;
+    background: #36597a;
+    border: none;
+    color: white;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 40px;
+    cursor: pointer;
+    margin: 2px 20px 0 0;
+}
+
+footer .footWrap .footTop .footTopRight .linkImage {
+    width: 62px;
+    height: 43px;
+    display: block;
+    float: left;
+    background: url(../img/logoSite02.png) no-repeat center / cover;
+}
+
+footer .footWrap .footInfo {
+    width: 1280px;
+    height: 70px;
+    float: left;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #dddddd;
+}
+
+footer .footWrap .footInfo .footAddress {
+    width: 100%;
+    height: 20px;
+    float: left;
+}
+
+footer .footWrap .footInfo .footAddress span {
+    display: block;
+    float: left;
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 10px;
+    color: #606060;
+    margin-right: 20px;
+    position: relative;
+}
+
+footer .footWrap .footInfo .footAddress span::before {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #606060;
+    left: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+footer .footWrap .footInfo p {
+    display: block;
+    width: 100%;
+    height: 20px;
+    line-height: 30px;
+    font-size: 12px;
 }
