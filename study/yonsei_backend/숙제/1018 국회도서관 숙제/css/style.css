@@ -876,6 +876,7 @@ main .mainWrap .section2 .sectBottom .imgSlide .slideController .icons {
     width: 28px;
     height: 28px;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 main .mainWrap .section2 .sectBottom .imgSlide .slideController .prev {

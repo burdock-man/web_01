@@ -1,5 +1,6 @@
 var slide = document.querySelector(".slideBox");
 var slideImg = document.querySelectorAll(".slideBox img");
+
 var slideCurrent = document.querySelector(".slideController .slide_current");
 var slidePrev = document.querySelector(".slideController .prev");
 var slideStop = document.querySelector(".slideController .stop");
@@ -9,7 +10,7 @@ var slideShowNum = 1;
 var slideTotal = slideImg.length;
 var slideWidth = document.querySelector(".slideBox>img").offsetWidth;
 
-var slideCopyObj = slideImg[0].cloneNode(true); // 슬라이드 이미지 복사
+var slideCopyObj = slideImg[0].cloneNode(true); // 슬라이드 이미지 복사 // 이건 보여지는 이미지가 한개니까 굳이 for문 돌릴 필요 없음.
 slide.append(slideCopyObj); // 슬라이드 이미지 붙여넣기
 
 var slideNum = 0;
