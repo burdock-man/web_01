@@ -410,18 +410,20 @@ nav ul {
     border-radius: 50%;
     border: 1px solid #666;
     position: absolute;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
 }
 
 .slideBtn.leftBtn {
     background: rgba(255,255,255,.6) url(../img/arrowL.png) no-repeat center / 30%;
-    left: 310px;
+    transform: translateX(-520px);
+    left: 50%;
 }
 
 .slideBtn.rightBtn {
     background: rgba(255,255,255,.6) url(../img/arrowR.png) no-repeat center / 30%;
-    right: 310px;
+    transform: translateX(475px);
+    left: 50%;
 }
 
 .slide_wrap {
